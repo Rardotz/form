@@ -1,0 +1,441 @@
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0 ;
+    font-family: teste;
+}
+@font-face {
+    font-family: teste;
+    src: url(pillgothic300mgthin-webfont.woff);
+    font-display: swap;
+}
+@import url('https://fonts.cdnfonts.com/css/pill-gothic-600mg');
+@font-face {
+    font-family: Pill;
+    src: url("https://db.onlinewebfonts.com/t/c6d5c81b8a1db9e0f74474c98ce275c1.eot");
+    src: url("https://db.onlinewebfonts.com/t/c6d5c81b8a1db9e0f74474c98ce275c1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c6d5c81b8a1db9e0f74474c98ce275c1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c6d5c81b8a1db9e0f74474c98ce275c1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c6d5c81b8a1db9e0f74474c98ce275c1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c6d5c81b8a1db9e0f74474c98ce275c1.svg#PillGothic300mg-Black")format("svg");
+    font-display: swap;
+}
+body{
+    background-color: #08611d;
+    width: 100VW;
+    height: 100vh;
+}
+
+main{
+    background-image: url(fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2c2c2c;
+    width: 100VW;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formulario{
+    width: 400px !important;
+    height: 500px !important;
+    background-color: rgb(62, 61, 61);
+    border-radius: 1%;
+    border: 2px solid #2c2c2c;
+    box-shadow: 0px 0px 500px #2c2c2c; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+    width: 300px;
+    height: auto;
+}
+.square{
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+.pt_a{
+    width: 100%;
+    height: 45%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.pt_b{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+
+}
+.pt_c{
+    width: 100%;
+    height: 5%;
+  
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.icon_b, .icon_a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 100%;
+    
+    
+    
+}
+
+.cas_a, .cas_b, .botom{
+    height: 100%;
+    width: 100%;
+   background-color: #0c992d;
+   border: 1px solid #2c2c2c;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+}
+.cas_b{
+    margin-top: 20px;
+}
+
+
+
+
+
+.txt__{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    
+   
+}
+.txt_,.txt__{
+    color: white;
+    margin-top: 10px;
+    font-family: teste;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+    
+}
+.people, .lock{
+    color: white;
+    height: 40px;
+    width: 40px;
+}
+.botom{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid #2c2c2c;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.botom:hover{
+background-color: #08611d;
+
+}
+
+
+.txt_:hover{
+    color: #0c992d;
+}
+
+
+.olho_aberto, .olho_fechado{
+    color: #0c992d;
+    position: relative;
+    
+    margin-left: -40px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.olho_aberto{
+    display: none;
+}
+.img_lo{
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                          selecao impedir                                   */
+
+
+label, .br, .txt_, .logo{
+    -webkit-user-select:none;  
+    -moz-user-select:none;     
+    -ms-user-select:none;      
+    user-select:none;  
+}
+
+
+
+
+
+
+/*                          fim selecao impedir                                   */
+/*                          login efeito placeholder                                   */
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 15px;
+    width: 80%;
+    
+    
+  }
+  .a_a{
+    padding-right:  15% !important;
+  }
+  .label-float input {
+    
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-appearance: none;
+  }
+  
+  .label-float input:focus {
+    border: 2px solid #0c992d;
+  }
+  
+  .label-float input::placeholder {
+    color: transparent;
+  }
+  
+  .label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .label-float input:required:invalid+label {
+    /* color: red; */
+  }
+  
+  .label-float input:focus:required:invalid {
+    /* border: 2px solid red; */
+  }
+  
+  .label-float input:required:invalid+label:before {
+    /* content: '*'; */
+  }
+  
+  .label-float input:focus+label,
+  .label-float input:not(:placeholder-shown)+label {
+    border-radius: 6px;
+    font-size: 13px;
+    top: 0;
+    color: #0c992d;
+  }
+
+
+
+  /*                             responsividade                      */
+
+
+
+  
+
+
+ 
+
+
+    @media(max-width:1000px){
+        
+
+        body{
+            background-color: #08611d;
+            width: 100VW;
+            height: 100vh;
+        }
+        
+        main{
+            background-image: url(fundo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #2c2c2c;
+            width: 100VW;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        
+        .formulario{
+            width: 400px !important;
+            height: 500px !important;
+            background-color: rgb(62, 61, 61);
+            border-radius: 1%;
+            border: 2px solid #2c2c2c;
+            box-shadow: 0px 0px 500px #2c2c2c; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        @media (max-width:500px){
+  .label-float label {
+        top: calc(50% - 12px);
+    }
+    .formulario{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(62, 61, 61);
+        border-radius: 1%;
+        border: 2px solid #2c2c2c;
+        box-shadow: 0px 0px 500px #2c2c2c; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 250px;
+        height: auto;
+    }
+    .cas_a, .cas_b, .botom{
+        height: 80%;
+        width: 100%;
+       background-color: #0c992d;
+       border: 1px solid #2c2c2c;
+        align-items: center;
+        display: flex;
+        border-radius: 8px;
+        justify-content: center;
+    }
+
+    .pt_c{
+        width: 100%;
+        height: 5%;
+        align-items: start !important;
+        display: flex;
+        justify-content: center !important;
+    
+    
+    }
+
+    .txt_,.txt__{
+        color: white;
+        margin-top: 10px;
+        font-family: teste;
+        font-size: 15px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .label-float input {
+    
+        border: 1px solid #2c2c2c;
+        border-radius: 5px;
+        outline: none;
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -webkit-appearance: none;
+      }
+
+
+      .people, .lock{
+        color: white;
+        height: 30px;
+        width: 30px;
+    }
+  } 
+  
+  
+  
+  
+  @media(max-width:300px){
+
+
+    body{
+        height: 100vh !important;
+        width: 300px !important;
+    }
+    main{
+        height: 100vh !important;
+        width: 300px !important;
+
+    }
+    html{
+        height: 100vh !important;
+        width: 300px !important;
+
+    }
+    
+    }
